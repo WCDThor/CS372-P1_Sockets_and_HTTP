@@ -1,5 +1,4 @@
 import socket  # allows use of socket features
-import time
 """
 Author: Torin McDonald
 Class: OSU CS370 Intro to Networks
@@ -18,19 +17,18 @@ Sources:
         April 12, 2025.
         Used for the socket.gethostbyname(hostname) function to
     4) Making HTTP requests with sockets in Python (Triangles) from
-        internl/ppointers at
+        internal/pointers at
         https://www.internalpointers.com/post/making-http-requests-sockets-python
         retrieved on April 12, 2025
         Used to confirm how to use sockets for HTTP GET requests and for how to
-        print the received data in a nicer format using the decode() funciton
+        print the received data in a nicer format using the decode() function
         and to better explain the use of AF_INET.
     5) GeeksforGeeks' Socket Programming in Python at
         https://www.geeksforgeeks.org/socket-programming-python/
-        retrievied on April 12, 2025. Used as further reference material
-    6) Part 1 code
+        retrieved on April 12, 2025. Used as further reference material
 """
 HOST = "127.0.0.1"  # A standard loop back interface address (localhost)
-PORT = 4253        # Post to listen on must be 1024 or higher
+PORT = 4247        # Post to listen on must be 1024 or higher
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
